@@ -1,7 +1,8 @@
 # llama-1b-dialogsum-finetuned
 ## Overview
 This repository includes:
-- Fine-tuning a pre-trained small language model (Llama 1b) using LoRA and PEFT.
+- Fine-tuning a pre-trained small language model (Llama 1b) using LoRA and PEFT with dataset: https://huggingface.co/datasets/neil-code/dialogsum-test
+- Conduct initial testing on the base model to establish a performance baseline.
 - Running training with specified configurations.
 - Evaluating the model both qualitatively and quantitatively (using ROUGE metric).
 - Saving the fine-tuned model and uploading it to Hugging Face.
