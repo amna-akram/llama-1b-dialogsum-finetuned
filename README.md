@@ -30,3 +30,7 @@ rougeLsum: 5.88%
 Overall based on Rouge and manual tests, PEFT models seems to perform a bit better than the base model
 
 The deployed model can be found at: https://huggingface.co/Amna1917e81729/llama-1b-dialogsum-finetuned
+
+# Error Fixes
+1. The error fixes made in the initial notebook include removing the following line as rouge_score doesn't have version attribute: print("Rouge Score version:", rouge_score.__version__) and replacing with !pip show rouge-score to get version information
+2. Updating the line: eval_tokenizer = AutoTokenizer.from_pretrained(base_model_id, add_bos_token=True, trust_remote_code=True, use_fast=False)
